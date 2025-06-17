@@ -10,7 +10,26 @@
   padding-bottom: 2rem;
 }
 
+.about-us-title{
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #253388;
+  width: 70%;
+}
 
+.about-us-text{
+  font-size: 2.5rem;
+  color: #676767;
+  width: 100%;
+  
+}
+
+.about-us-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
 .about{
     /* margin: 180px auto; */
     margin-top: 169px; 
@@ -30,6 +49,7 @@
 
 .about-right{
     flex-basis: 56%;
+    
 }
 
 .about-img{
@@ -61,7 +81,7 @@
 .about h2{
     font-size: 35px;
     color: #000F38;
-    margin: 10px 0 ;
+    margin: 2px 0 ;
     max-width: 400px;
 }
 .about p{
@@ -75,6 +95,7 @@
     .about{
         flex-direction: column;
     }
+   
     .about-left{
         flex-basis: 100%;
         margin: 20px;
