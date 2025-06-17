@@ -10,12 +10,9 @@ function ContactForm() {
     message: ''
   });
   const [status, setStatus] = useState('');
-  
-  // Initialize EmailJS
+    // Initialize EmailJS - using the new v3 syntax
   emailjs.init({
-    publicKey: "2u6lKp7eM2aUaWEdd",
-    blockHeadless: false, // This is important for authentication
-    limitRate: true
+    publicKey: "2u6lKp7eM2aUaWEdd"
   });
 
   const handleChange = (e) => {
@@ -29,20 +26,21 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    
-    try {      const templateParams = {
+      try {
+      const templateParams = {
+        to_name: 'AMES Group',
         to_email: 'ossfawzy1@gmail.com',
         from_name: formData.fullName,
         from_email: formData.email,
-        service: formData.service,
+        service_type: formData.service,
         message: formData.message,
-        reply_to: formData.email // Add this for proper reply-to header
+        reply_to: formData.email
       };
-        await emailjs.send(
+
+      const response = await emailjs.send(
         'service_i4f1c72',
         'template_xkjoc75',
-        templateParams,
-        '2u6lKp7eM2aUaWEdd' // Add public key here as well
+        templateParams
       );
 
       setStatus('success');
