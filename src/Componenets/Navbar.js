@@ -29,7 +29,7 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <button>Sign Up</button>
+          <button>Book Consultation</button>
         </ul>
       </nav>
     );
