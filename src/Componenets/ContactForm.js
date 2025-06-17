@@ -30,17 +30,19 @@ function ContactForm() {
     e.preventDefault();
     setStatus('sending');
     
-    try {
-      const templateParams = {
+    try {      const templateParams = {
         to_email: 'ossfawzy1@gmail.com',
         from_name: formData.fullName,
         from_email: formData.email,
         service: formData.service,
-        message: formData.message
-      };      await emailjs.send(
-        'service_i4f1c72', // Replace with your EmailJS service ID
-        'template_xkjoc75', // Replace with your EmailJS template ID
-        templateParams
+        message: formData.message,
+        reply_to: formData.email // Add this for proper reply-to header
+      };
+        await emailjs.send(
+        'service_i4f1c72',
+        'template_xkjoc75',
+        templateParams,
+        '2u6lKp7eM2aUaWEdd' // Add public key here as well
       );
 
       setStatus('success');
