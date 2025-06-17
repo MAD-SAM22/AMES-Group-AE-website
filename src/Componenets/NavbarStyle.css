@@ -16,9 +16,15 @@
 }
 
 .navbar-logo {
-  color: #222;
-  font-size: 2rem;
+  color: #27327e;
+  font-size: 1.5rem;
   cursor: pointer;
+}
+
+.logo {
+  height: 100px;
+  object-fit: contain; 
+  margin-right: 10px;
 }
 
 .nav-menu {

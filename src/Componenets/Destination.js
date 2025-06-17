@@ -8,9 +8,9 @@ const Destination = () => {
   return (
     <>
       <div className="destination">
-        <h1> Popular Destination </h1>
-        <p> Tours give you the oppurtunity to see a lot,within a time frame.</p>
-
+        <h1> Australia, your next destination! </h1>
+        <p>Take the next step toward a better future—Australia is waiting.</p>
+        
         <DestinationData
           className="first-desc"
           heading="Taal Volcano, Batangas"
