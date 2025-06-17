@@ -1,31 +1,42 @@
 import "./AboutUsStyles.css";
-function AboutUS() {
+
+import React from "react";
+import about_img from "../assets/about.png";
+import play_icon from "../assets/play-icon.png";
+
+const AboutUs = ({setPlayState}) => {
+  const handlePlayClick = () => {
+    if (setPlayState) {
+      setPlayState(true);
+    }
+  };
+
   return (
-    <div className="about-container">
-      <h1>Our History</h1>
-      <p>
-        Trippy is owned and managed by Trippy In Pvt. Ltd., a leading brand in
-        web designing services and e-commerce solutions. Trippy In Pvt. Ltd. is
-        counted for its expertise in web solutions and its top ranking business
-        portals. Our invincible expertise and rich experience has raised our
-        spirit to reach ahead from our client's expectation. Commendable success
-        rate of other portals managed by Trippy is a live paradigm of our work
-        excellence.
-      </p>
-
-      <h1>Our Mission</h1>
-      <p>
-        Our mission is to touch the horizon where our capabilities may
-        successfully meet with the requirements of our clients, that too with
-        ultimate transparency and cost-effectiveness.
-      </p>
-
-      <h1>Our Vision</h1>
-      <p>
-        To sow the seeds of por-excellence services with customer centric
-        approach and rean the trust of worldwide clients.
-      </p>
+    <div className="about">
+      <div className="about-left">
+        <img src={about_img} alt="" className="about-img" />
+        <img src={play_icon} alt="" className="play-icon" onClick={handlePlayClick} />
+      </div>      <div className="about-right">
+        <h3>ABOUT AMES GROUP</h3>
+        <h2>Your Gateway to Global Education</h2>
+        <p>
+          AMES Group is your trusted partner in international education and immigration services. 
+          We specialize in helping students achieve their dreams of studying abroad through 
+          comprehensive support and expert guidance.
+        </p>
+        <p>
+          With years of experience and a deep understanding of international education systems, 
+          we provide personalized solutions for visa applications, university admissions, 
+          and settlement services across Australia, Canada, USA, UK, and more.
+        </p>
+        <p>
+          Our dedicated team of education and immigration specialists ensures a smooth transition 
+          to your chosen destination, handling everything from course selection to visa processing, 
+          making your international education journey seamless and successful.
+        </p>
+      </div>
     </div>
   );
-}
-export default AboutUS;
+};
+
+export default AboutUs;
