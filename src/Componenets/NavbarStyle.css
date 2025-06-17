@@ -76,8 +76,9 @@ button:hover {
 .menu-icons {
   display: none;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   .NavbarItems {
+   
     z-index: 99;
   }
   .nav-menu {
@@ -97,6 +98,7 @@ button:hover {
     transition: 0.3s ease-in-out;
     border-radius: 13px;
   }
+  
   .nav-menu.active {
     left: 0;
     opacity: 1;
@@ -104,11 +106,15 @@ button:hover {
     transition: 0.3s ease-in-out;
   }
 
+   .navbar-logo {
+    padding: 10px 0;
+  }
   .logo {
-    height: 80px;
-    width: 80px;
-    object-fit: contain; 
+   height: 200px;
+   width: 200px;
+    object-fit: contain;
     margin-right: 10px;
+    border: 2px solid red;
   }
   .nav-links {
     display: block;
