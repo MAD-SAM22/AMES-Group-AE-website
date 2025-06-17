@@ -10,8 +10,13 @@ function ContactForm() {
     message: ''
   });
   const [status, setStatus] = useState('');
-    // Initialize EmailJS with your public key
-  emailjs.init("2u6lKp7eM2aUaWEdd");
+  
+  // Initialize EmailJS
+  emailjs.init({
+    publicKey: "2u6lKp7eM2aUaWEdd",
+    blockHeadless: false, // This is important for authentication
+    limitRate: true
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
