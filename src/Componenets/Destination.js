@@ -8,9 +8,9 @@ const Destination = () => {
   return (
     <>
       <div className="destination">
-        <h1>Popular Australian Cities</h1>
-        <p>Discover incredible opportunities across Australia's most vibrant cities</p>
-
+        <h1> Australia, your next destination! </h1>
+        <p>Take the next step toward a better future—Australia is waiting.</p>
+        
         <DestinationData
           className="first-desc"
           heading="Sydney & Melbourne"
