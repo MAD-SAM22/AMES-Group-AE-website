@@ -76,7 +76,7 @@ button:hover {
 .menu-icons {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .NavbarItems {
    
     z-index: 99;
