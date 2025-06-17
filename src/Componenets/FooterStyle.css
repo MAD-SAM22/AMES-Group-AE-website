@@ -4,6 +4,12 @@
   color: #fff;
 }
 
+.footer-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #253388;
+}
+
 .top {
   display: flex;
   align-items: center;
@@ -50,6 +56,11 @@
     padding: 4rem 2rem;
   }
 
+  .footer-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #253388;
+  }
   .footer i {
     margin: 1rem 1rem 0 0;
   }
