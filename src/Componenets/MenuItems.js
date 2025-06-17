@@ -6,16 +6,16 @@ export const MenuItems = [
     icon: "fa-solid fa-house-user"
   },
   {
-    title: "About",
+    title: "About Us",
     url: "/about",
     cName: "nav-links",
     icon: "fa-solid fa-circle-info"
   },
   {
-    title: "Service",
+    title: "Visa Services",
     url: "/service",
     cName: "nav-links",
-    icon: "fa-solid fa-briefcase"
+    icon: "fa-solid fa-passport"
   },
   {
     title: "Contact",
@@ -24,8 +24,8 @@ export const MenuItems = [
     icon: "fa-solid fa-address-book"
   },
   {
-    title: "Sign Up",
-    url: "/sign up",
+    title: "Get Assessment",
+    url: "/assessment",
     cName: "nav-links-mobile"
   }
 ];

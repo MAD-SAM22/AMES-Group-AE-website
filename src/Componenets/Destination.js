@@ -8,28 +8,21 @@ const Destination = () => {
   return (
     <>
       <div className="destination">
-        <h1> Popular Destination </h1>
-        <p> Tours give you the oppurtunity to see a lot,within a time frame.</p>
+        <h1>Popular Australian Cities</h1>
+        <p>Discover incredible opportunities across Australia's most vibrant cities</p>
 
         <DestinationData
           className="first-desc"
-          heading="Taal Volcano, Batangas"
-          text="One of the most iconic views in Luzon, Mt. Taal boasts a volcano
-          inside a lake inside an island. If you fancy a closer look, the
-          hike up to the crater is a mere 45 minutes, and is easy enough for
-          beginners. Guides will assist you most of the way, and you'll see
-          the peculiar environment found on an active volcano, including
-          volcanic rocks and steam vents. The hike can be dusty and hot, so
-          plan for an early morning trip, and then unwind with some bulalo
-          before heading back home!"
+          heading="Sydney & Melbourne"
+          text="Experience life in Australia's largest cities, known for their excellent universities, diverse job markets, and high quality of life. Sydney offers iconic landmarks, beautiful beaches, and a thriving business district, while Melbourne is renowned for its culture, education, and healthcare sectors. Both cities provide excellent opportunities for international students and skilled professionals."
           img1={imgd}
           img2={imge}
         />
 
         <DestinationData
           className="second-desc"
-          heading="Mt. Daguldul, Batangas"
-          text="If you're looking for a hike that's a little more challenging but still good for a beginner mountaineer, check out Mt. Daguldul in San Juan, Batangas. You'll start your hike from the beach and pass through tropical forest, different rock formations, and small streams. There's a small store halfway up the trail where you can take a break and drink buko juice, and though the summit itself may not have the best view, the breeze is fantastic. Once you've made it back down, head straight to the beach for a refreshing, well-deserved swim."
+          heading="Brisbane & Gold Coast"
+          text="Queensland's premier cities offer a perfect blend of opportunity and lifestyle. Brisbane, with its growing tech sector and excellent universities, provides a more relaxed pace of life compared to Sydney and Melbourne. The Gold Coast combines beautiful beaches with emerging business districts, making it ideal for both study and work. Both cities offer great weather year-round and lower living costs."
           img1={imgf}
           img2={imgg}
         />

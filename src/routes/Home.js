@@ -10,10 +10,9 @@ function Home() {
       <Navbar />
       <Hero
         cName="hero"
-        heroImg={img1}
-        title="Your Journey Your Story"
-        text="Choose your Favourite Destination"
-        btnText="Travel Plan"
+        heroImg={img1}        title="Your Australian Dream Starts Here"
+        text="Expert Immigration Services for Study, Work, and Permanent Residency"
+        btnText="Free Assessment"
         url="/"
         btnClass="show"
       />

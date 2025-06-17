@@ -9,8 +9,7 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <nav className="NavbarItems">
-        <h1 className="navbar-logo">Trippy</h1>
+      <nav className="NavbarItems">        <h1 className="navbar-logo">AMES Group</h1>
         <div className="menu-icons" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
@@ -26,7 +25,7 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <button>Sign Up</button>
+          <button>Free Immigration Assessment</button>
         </ul>
       </nav>
     );
