@@ -17,8 +17,10 @@ const AboutUs = ({setPlayState}) => {
         <img src={about_img} alt="" className="about-img" />
         <img src={play_icon} alt="" className="play-icon" onClick={handlePlayClick} />
       </div>      <div className="about-right">
-        <h3>ABOUT AMES GROUP</h3>
-        <h2>Your Gateway to Global Education</h2>
+        <div className="about-us-header">
+        <p className="about-us-title">ABOUT AMES GROUP</p>
+        <h2 className="about-us-text">Your Gateway to Global Education</h2>
+        </div>
         <p>
           AMES Group is your trusted partner in international education and immigration services. 
           We specialize in helping students achieve their dreams of studying abroad through 
