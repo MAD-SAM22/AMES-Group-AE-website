@@ -114,7 +114,6 @@ button:hover {
    width: 200px;
     object-fit: contain;
     margin-right: 10px;
-    border: 2px solid red;
   }
   .nav-links {
     display: block;
