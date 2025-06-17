@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "loader-utils": "3.2.1",
     "localized-strings": "0.2.4",
     "react": "18.2.0",
