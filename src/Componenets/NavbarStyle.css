@@ -16,13 +16,15 @@
 }
 
 .navbar-logo {
-  color: #27327e;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
   cursor: pointer;
 }
 
 .logo {
-  height: 100px;
+  height: 40px;
   object-fit: contain; 
   margin-right: 10px;
 }
@@ -102,6 +104,12 @@ button:hover {
     transition: 0.3s ease-in-out;
   }
 
+  .logo {
+    height: 80px;
+    width: 80px;
+    object-fit: contain; 
+    margin-right: 10px;
+  }
   .nav-links {
     display: block;
     width: 100%;
