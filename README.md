@@ -1,2 +1,2 @@
-# AMES-Group-AE-website
+# Trippy
 Created with CodeSandbox
