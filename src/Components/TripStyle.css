@@ -45,6 +45,26 @@
   padding: 0.9rem 0 0.2rem 0;
 }
 
+.no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.no-results h3 {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.no-results p {
+  color: #888;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 @media screen and (max-width: 1200px) {
   .trip-card {
     grid-template-columns: repeat(2, 1fr);

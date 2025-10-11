@@ -1,0 +1,382 @@
+.service-filter {
+  margin: 2rem 0;
+}
+
+/* Main Search Bar Container */
+.search-bar-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border: 2px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.search-bar-container:hover {
+  border-color: #01959a;
+  box-shadow: 0 6px 25px rgba(1, 149, 154, 0.15);
+}
+
+/* Main Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-input-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  color: #01959a;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+
+.main-search-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.main-search-input:focus {
+  outline: none;
+  border-color: #01959a;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(1, 149, 154, 0.1);
+}
+
+.main-search-input::placeholder {
+  color: #999;
+  font-weight: 500;
+}
+
+.active-filters-count {
+  position: absolute;
+  right: 1rem;
+  background: #01959a;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* Expand/Collapse Button */
+.expand-btn {
+  background: #01959a;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expand-btn:hover {
+  background: #017a7e;
+  transform: translateY(-2px);
+}
+
+.expand-btn.expanded {
+  background: #dc3545;
+}
+
+.expand-btn.expanded:hover {
+  background: #c82333;
+}
+
+/* Quick Filter Pills */
+.quick-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.quick-filter {
+  background: #f8f9fa;
+  color: #666;
+  border: 2px solid #e9ecef;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.quick-filter:hover {
+  background: #e9ecef;
+  border-color: #01959a;
+  color: #01959a;
+}
+
+.quick-filter.active {
+  background: #01959a;
+  color: white;
+  border-color: #01959a;
+}
+
+.clear-all-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.clear-all-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+/* Expanded Filters Panel */
+.expanded-filters {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 1rem;
+  border: 1px solid #e9ecef;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-header h3 {
+  color: #01959a;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.filter-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-count {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.filter-select {
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+  background: white;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #01959a;
+  box-shadow: 0 0 0 3px rgba(1, 149, 154, 0.1);
+}
+
+/* Active Filters Display */
+.active-filters {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #01959a;
+}
+
+.active-filters h4 {
+  color: #01959a;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.active-filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-tag {
+  background: #01959a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.remove-filter {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.remove-filter:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-filter {
+    margin: 1rem 0;
+  }
+
+  .search-bar-container {
+    padding: 1rem;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .search-input-container {
+    width: 100%;
+  }
+
+  .expand-btn {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .quick-filters {
+    justify-content: center;
+  }
+
+  .clear-all-btn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .expanded-filters {
+    padding: 1rem;
+  }
+
+  .filter-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .filter-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .active-filter-tags {
+    flex-direction: column;
+  }
+
+  .filter-tag {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-search-input {
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .search-icon {
+    left: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .active-filters-count {
+    right: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .expand-btn {
+    padding: 0.8rem;
+    height: 45px;
+  }
+
+  .quick-filter {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
