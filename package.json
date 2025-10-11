@@ -1,7 +1,7 @@
 {
-  "name": "trippy",
+  "name": "ames-dubai-website",
   "version": "1.0.0",
-  "description": "Tour and travel website.",
+  "description": "AMES Group Dubai - Professional Immigration Services for UAE, Australia, Canada, USA, UK and more.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

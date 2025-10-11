@@ -29,7 +29,7 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <button>Book Consultation</button>
+          <Link to="/assessment" className="nav-cta-btn">Free Assessment</Link>
         </ul>
       </nav>
     );

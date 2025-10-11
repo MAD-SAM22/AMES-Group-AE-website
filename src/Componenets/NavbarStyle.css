@@ -73,6 +73,24 @@ button:hover {
   color: #fff;
 }
 
+.nav-cta-btn {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #01959a;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  display: inline-block;
+}
+.nav-cta-btn:hover {
+  background-color: #017a7e;
+  color: #fff;
+  text-decoration: none;
+}
+
 .menu-icons {
   display: none;
 }

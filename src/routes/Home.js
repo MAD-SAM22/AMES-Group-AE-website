@@ -1,19 +1,19 @@
-import Destination from "../Componenets/Destination";
-import Navbar from "../Componenets/Navbar";
-import Hero from "../Componenets/Hero";
+import Destination from "../Components/Destination";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
 import img1 from "../assets/img1.jpg";
-import Trip from "../Componenets/Trip";
-import Footer from "../Componenets/Footer";
+import Trip from "../Components/Trip";
+import Footer from "../Components/Footer";
 function Home() {
   return (
     <>
       <Navbar />
       <Hero
         cName="hero"
-        heroImg={img1}        title="Your Australian Dream Starts Here"
-        text="Expert Immigration Services for Study, Work, and Permanent Residency"
+        heroImg={img1}        title="Your Global Dream Starts in Dubai"
+        text="Expert Immigration Services for Australia, Canada, USA, UK, UAE Golden Visa & More"
         btnText="Free Assessment"
-        url="/"
+        url="/assessment"
         btnClass="show"
       />
       <Destination />

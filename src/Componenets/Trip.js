@@ -39,6 +39,16 @@ const Trip = () => {
             heading="Permanent Residency"
             text="Make Australia your permanent home. Our immigration experts guide you through various PR pathways including skilled migration, family sponsorship, and business visas. Get comprehensive support for your settlement journey."
           />
+          <TripData
+            image={Trip1}
+            heading="UAE Golden Visa"
+            text="Secure long-term residency in the UAE with our Golden Visa assistance. We help investors, entrepreneurs, and skilled professionals obtain 5-10 year renewable visas. Perfect for those seeking stability in the Middle East's business hub."
+          />
+          <TripData
+            image={Trip2}
+            heading="Dubai Work Permits"
+            text="Navigate Dubai's employment visa system with confidence. We assist with work permit applications, labor contracts, and employment visa renewals. Our team ensures compliance with UAE labor laws and regulations."
+          />
         </div>
       </div>
     </>

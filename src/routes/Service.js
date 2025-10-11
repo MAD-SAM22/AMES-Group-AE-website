@@ -1,8 +1,8 @@
-import Navbar from "../Componenets/Navbar";
-import Hero from "../Componenets/Hero";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
 import night from "../assets/night.jpg";
-import Footer from "../Componenets/Footer";
-import Trip from "../Componenets/Trip";
+import Footer from "../Components/Footer";
+import Trip from "../Components/Trip";
 function Service() {
   return (
     <>

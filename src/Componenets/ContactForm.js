@@ -98,6 +98,10 @@ function ContactForm() {
           <option value="Permanent Residency">Permanent Residency</option>
           <option value="Family Visa">Family Visa</option>
           <option value="Business Visa">Business Visa</option>
+          <option value="UAE Golden Visa">UAE Golden Visa</option>
+          <option value="Dubai Work Permit">Dubai Work Permit</option>
+          <option value="Skilled Migration">Skilled Migration</option>
+          <option value="Free Assessment">Free Assessment</option>
         </select>
         <textarea
           name="message"

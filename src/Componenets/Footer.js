@@ -5,8 +5,8 @@ const Footer = () => {
     <div className="footer">
       <div className="top">
         <div>
-          <h1 className="footer-text">AMESGROUP</h1>
-          <p>Choose Your Favourite Destination.</p>
+          <h1 className="footer-text">AMES GROUP DUBAI</h1>
+          <p>Your Gateway to Global Opportunities</p>
         </div>
         <div>
           <a href="/">
@@ -25,34 +25,35 @@ const Footer = () => {
       </div>
       <div className="bottom">
         <div>
-          <h4>Project</h4>
-          <a href="/">Changelog</a>
-          <a href="/">Status</a>
-          <a href="/">License</a>
-          <a href="/">All Versions</a>
+          <h4>Immigration Services</h4>
+          <a href="/service">Student Visas</a>
+          <a href="/service">Work Visas</a>
+          <a href="/service">Permanent Residency</a>
+          <a href="/service">Family Visas</a>
+          <a href="/service">Business Visas</a>
         </div>
         <div>
-          <h4>Community</h4>
-          <a href="/">Github</a>
-          <a href="/">Issues</a>
-          <a href="/">Project</a>
-          <a href="/">Twitter</a>
+          <h4>Destinations</h4>
+          <a href="/">Australia</a>
+          <a href="/">Canada</a>
+          <a href="/">USA</a>
+          <a href="/">UK</a>
+          <a href="/">UAE Golden Visa</a>
         </div>
 
         <div>
-          <h4>Help</h4>
-          <a href="/">Support</a>
-          <a href="/">Troubleshooting</a>
-
-          <a href="/">Contact Us</a>
+          <h4>Support</h4>
+          <a href="/contact">Free Assessment</a>
+          <a href="/contact">Consultation</a>
+          <a href="/contact">Contact Us</a>
+          <a href="/about">About Us</a>
         </div>
         <div>
-          <h4>Others</h4>
-          <a href="/">Terms of service</a>
-          <a href="/">Privacy</a>
-
-          <a href="/">Policy</a>
-          <a href="/">License</a>
+          <h4>Legal</h4>
+          <a href="/">Terms of Service</a>
+          <a href="/">Privacy Policy</a>
+          <a href="/">Disclaimer</a>
+          <a href="/">Complaints</a>
         </div>
       </div>
     </div>

@@ -18,23 +18,25 @@ const AboutUs = ({setPlayState}) => {
         <img src={play_icon} alt="" className="play-icon" onClick={handlePlayClick} />
       </div>      <div className="about-right">
         <div className="about-us-header">
-        <p className="about-us-title">ABOUT AMES GROUP</p>
-        <h2 className="about-us-text">Your Gateway to Global Education</h2>
+        <p className="about-us-title">ABOUT AMES GROUP DUBAI</p>
+        <h2 className="about-us-text">Your Gateway to Global Opportunities</h2>
         </div>
         <p>
-          AMES Group is your trusted partner in international education and immigration services. 
-          We specialize in helping students achieve their dreams of studying abroad through 
-          comprehensive support and expert guidance.
+          AMES Group Dubai is your trusted partner in international immigration and education services. 
+          Based in the heart of Dubai, we specialize in helping individuals and families achieve their 
+          dreams of studying, working, and living abroad through comprehensive support and expert guidance.
         </p>
         <p>
-          With years of experience and a deep understanding of international education systems, 
+          With years of experience and a deep understanding of global immigration systems, 
           we provide personalized solutions for visa applications, university admissions, 
-          and settlement services across Australia, Canada, USA, UK, and more.
+          and settlement services across Australia, Canada, USA, UK, UAE, and more. Our Dubai 
+          location gives us unique insights into the Middle East market and regional opportunities.
         </p>
         <p>
-          Our dedicated team of education and immigration specialists ensures a smooth transition 
-          to your chosen destination, handling everything from course selection to visa processing, 
-          making your international education journey seamless and successful.
+          Our dedicated team of immigration specialists and education consultants ensures a smooth transition 
+          to your chosen destination, handling everything from visa processing to settlement support. 
+          We understand the unique challenges faced by Dubai residents seeking international opportunities 
+          and provide tailored solutions for your success.
         </p>
       </div>
     </div>

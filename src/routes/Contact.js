@@ -1,8 +1,8 @@
-import Navbar from "../Componenets/Navbar";
-import Hero from "../Componenets/Hero";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
 import img from "../assets/2.jpg";
-import ContactForm from "../Componenets/ContactForm";
-import Footer from "../Componenets/Footer";
+import ContactForm from "../Components/ContactForm";
+import Footer from "../Components/Footer";
 function Contact() {
   return (
     <>

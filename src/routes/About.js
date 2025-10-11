@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../Componenets/Navbar";
-import Hero from "../Componenets/Hero";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
 import night from "../assets/night.jpg";
-import Footer from "../Componenets/Footer";
-import AboutUS from "../Componenets/AboutUs";
+import Footer from "../Components/Footer";
+import AboutUS from "../Components/AboutUs";
 
 function About({ setPlayState }) {
   return (
