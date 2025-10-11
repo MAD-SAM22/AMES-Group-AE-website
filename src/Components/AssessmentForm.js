@@ -20,10 +20,10 @@ function AssessmentForm() {
   });
   const [status, setStatus] = useState('');
 
-  // Initialize EmailJS with environment variables
+  // Initialize EmailJS with hardcoded values
   emailjs.init({
-    publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-    privateKey: process.env.REACT_APP_EMAILJS_PRIVATE_KEY
+    publicKey: '2u6lKp7eM2aUaWEdd',
+    privateKey: 'ibFsE4GDoirj7sSn4kutz'
   });
 
 
@@ -84,11 +84,11 @@ Please respond within 24 hours as promised to the client.
       console.log('Attempting to send assessment with EmailJS...');
       console.log('Template params:', templateParams);
 
-      const response = await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        templateParams
-      );
+              const response = await emailjs.send(
+                'service_xqhk3fw',
+                'template_xkjoc75',
+                templateParams
+              );
 
       console.log('Assessment sent successfully:', response);
       setStatus('success');
