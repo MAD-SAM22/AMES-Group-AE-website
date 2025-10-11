@@ -2,6 +2,12 @@ import TripData from "./TripData";
 import ServicePopup from "./ServicePopup";
 import ServiceFilter from "./ServiceFilter";
 import "./TripStyle.css";
+import student from "../assets/student-visa.jpg";
+import Business from "../assets/Business-Visa.jpg";
+import family from "../assets/family-visa.png";
+import golden from "../assets/golden-visa.png";
+import perminant from "../assets/AU-perminant.jpg";
+import work from "../assets/work-permit-uae.jpg";
 import Trip1 from "../assets/5.jpg";
 import Trip2 from "../assets/8.jpg";
 import Trip3 from "../assets/6.jpg";
@@ -14,7 +20,7 @@ const Trip = () => {
 
   const services = [
     {
-      image: Trip1,
+      image: student,
       heading: "Student Visas",
       text: "Pursue world-class education at Australia's top universities. We assist with student visa applications, course selection, and university admissions. Our expert guidance ensures a smooth transition to student life in Australia.",
       // Filter metadata
@@ -128,7 +134,7 @@ const Trip = () => {
       processingTime: "2-6 months depending on visa type"
     },
     {
-      image: Trip2,
+      image: family,
       heading: "Family Visas",
       text: "Reunite with your loved ones in Australia. We handle partner visas, parent visas, and child visas. Our experienced team helps you navigate the family stream migration process with confidence.",
       // Filter metadata
@@ -166,7 +172,7 @@ const Trip = () => {
       processingTime: "12-24 months depending on visa type and circumstances"
     },
     {
-      image: Trip1,
+      image: Business,
       heading: "Business Migration",
       text: "Establish or expand your business in Australia. We assist with business innovation visas, investor visas, and entrepreneur pathways. Get expert advice on business migration requirements and opportunities.",
       // Filter metadata
@@ -204,7 +210,7 @@ const Trip = () => {
       processingTime: "12-18 months for complete process"
     },
     {
-      image: Trip3,
+      image: perminant,
       heading: "Permanent Residency",
       text: "Secure your permanent future in Australia. We guide you through the pathway to permanent residency, including skilled migration, family reunification, and humanitarian programs. Get expert assistance for your PR journey.",
       // Filter metadata
@@ -242,7 +248,7 @@ const Trip = () => {
       processingTime: "12-24 months depending on pathway and circumstances"
     },
     {
-      image: Trip1,
+      image: golden,
       heading: "UAE Golden Visa",
       text: "Secure long-term residency in the UAE with our Golden Visa assistance. We help investors, entrepreneurs, and skilled professionals obtain 5-10 year renewable visas. Perfect for those seeking stability in the Middle East's business hub.",
       // Filter metadata
@@ -280,7 +286,7 @@ const Trip = () => {
       processingTime: "2-4 months for application processing"
     },
     {
-      image: Trip2,
+      image: work,
       heading: "Dubai Work Permits",
       text: "Navigate Dubai's employment visa system with confidence. We assist with work permit applications, labor contracts, and employment visa renewals. Our team ensures compliance with UAE labor laws and regulations.",
       // Filter metadata
