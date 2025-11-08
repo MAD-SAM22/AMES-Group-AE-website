@@ -9,8 +9,8 @@ module.exports = {
       colors: {
         brand: {
           primary: "#01959a",
-          primaryDark: "#017a7e",
-          accent: "#253388",
+          primaryDark: "#1A2768",
+          accent: "#F58220",
         },
       },
       boxShadow: {
