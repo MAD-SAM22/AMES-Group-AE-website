@@ -1,27 +1,27 @@
 const testimonials = [
   {
-    name: "Michael & Priya Patel",
-    title: "Healthcare professionals – Australia skilled visa",
+    name: "Amie Baybayon",
+    title: "Student visa – Australia",
     quote:
-      "“Our consultant shared a simple spreadsheet with every document we needed. Weekly calls kept the process moving and we landed in Melbourne on schedule.”",
+      "“AMES made every requirement straightforward. The Dubai counsellors were as supportive as the Australian team and handled my student visa quickly.”",
   },
   {
-    name: "Ahmed Al Habsi",
-    title: "Senior engineer – UAE Golden Visa",
+    name: "Rovir Revelo",
+    title: "Postgraduate enrolment – Sydney",
     quote:
-      "“AMES coached my employer through the corporate sponsorship steps and handled the government follow-ups for me. The process was clear from day one.”",
+      "“Daily updates and friendly advisers meant no surprises. I always knew what document was next and when I would hear back.”",
   },
   {
-    name: "Grace Ndlovu",
-    title: "Student – UK higher education",
+    name: "Denise Galindo",
+    title: "Work & study relocation – Canada",
     quote:
-      "“They helped shortlist universities, review my personal statement, and sort accommodation before I flew out. I still check in with the team during the semester.”",
+      "“The process was smooth from consultation to arrival. AMES took care of the paperwork while I focused on preparing for my new life.”",
   },
   {
-    name: "The Fernandez Family",
-    title: "Family relocation – Portugal residence permit",
+    name: "Michelle Jancilan",
+    title: "Family migration – New Zealand",
     quote:
-      "“What made the difference was the honest advice about schools and banking. AMES connected us with families already in Lisbon which made our move less stressful.”",
+      "“Even during a difficult year, AMES kept the momentum going. Their guidance helped our family secure visas and start fresh abroad.”",
   },
 ];
 
@@ -29,11 +29,11 @@ const ClientTestimonials = () => (
   <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6 lg:px-8">
     <div className="text-center">
       <h2 className="text-3xl font-bold text-brand-accent sm:text-4xl">
-        Real clients. Real visas. Real gratitude.
+        Trusted by thousands of AMES Group clients worldwide
       </h2>
       <p className="mt-4 text-base text-gray-600 sm:text-lg">
-        Hear how AMES Group has helped professionals, families, and investors
-        unlock life-changing opportunities across the globe.
+        The Dubai branch delivers the same attentive service and positive
+        outcomes that students and migrants praise across the AMES network.
       </p>
     </div>
 

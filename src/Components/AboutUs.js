@@ -2,84 +2,89 @@ import React from "react";
 import about_img from "../assets/about.png";
 import play_icon from "../assets/play-icon.png";
 
+const values = [
+  {
+    title: "Comprehensive services",
+    description:
+      "Student visas, skilled migration, family sponsorship, permanent residency, and UAE Golden Visa programs delivered under one roof.",
+    icon: "fa-solid fa-layer-group",
+  },
+  {
+    title: "Personalised support",
+    description:
+      "Experienced counsellors tailor each step to your goals, ensuring you understand requirements, costs, and timelines.",
+    icon: "fa-solid fa-user-check",
+  },
+  {
+    title: "Proven success",
+    description:
+      "Since 2007, AMES Group has helped thousands achieve their study and migration ambitions across 15+ destinations.",
+    icon: "fa-solid fa-chart-line",
+  },
+  {
+    title: "Transparent & affordable",
+    description:
+      "Competitive pricing with clear documentation checklists keeps you in control of every milestone.",
+    icon: "fa-solid fa-scale-balanced",
+  },
+  {
+    title: "Free initial consultation",
+    description:
+      "Start with a no-cost assessment to explore your options and receive tailored recommendations from licensed consultants.",
+    icon: "fa-solid fa-comments",
+  },
+  {
+    title: "Client-first approach",
+    description:
+      "We prioritise your experience with seamless, stress-free support from your first question to your arrival abroad.",
+    icon: "fa-solid fa-hands-holding-circle",
+  },
+];
+
+const languages = [
+  "English",
+  "Arabic",
+  "Hindi",
+  "Urdu",
+  "Spanish",
+  "French",
+  "Chinese",
+  "Russian",
+  "Thai",
+  "Portuguese",
+  "Tamil",
+  "Sinhala",
+];
+
+const businessHighlights = [
+  "Strong client focus with dedicated guidance at every stage.",
+  "Extensive network of partner universities, colleges, and employers worldwide.",
+  "Comprehensive services covering education counselling, visa assistance, and post-arrival support.",
+  "Experienced consultants with in-depth knowledge of global immigration systems.",
+];
+
+const leadership = [
+  {
+    name: "Ossama Abdellatif",
+    role: "AMES Group Founder",
+    summary:
+      "Launched AMES Group in 2007 to make global education and migration accessible for students, professionals, and families. The Dubai branch continues this vision for the Middle East.",
+  },
+];
+
+const accreditations = [
+  "Registered MARA Agents",
+  "ICCRC Regulated Consultants",
+  "OISC Accredited Advisers",
+  "Certified Education Agents",
+];
+
 const AboutUs = ({ setPlayState }) => {
   const handlePlayClick = () => {
     if (setPlayState) {
       setPlayState(true);
     }
   };
-
-  const values = [
-    {
-      title: "Straightforward advice",
-      description:
-        "You receive clear answers on eligibility, costs, and timelines before we move a single document.",
-      icon: "fa-solid fa-comments",
-    },
-    {
-      title: "Compliance first",
-      description:
-        "Every file is prepared with licensed practitioners who work directly with MARA, ICCRC, and OISC standards.",
-      icon: "fa-solid fa-shield-check",
-    },
-    {
-      title: "Dubai to destination",
-      description:
-        "Local insights, embassy relationships, and relocation partners ensure support from visa lodgment to arrival.",
-      icon: "fa-solid fa-earth-asia",
-    },
-  ];
-
-  const timeline = [
-    {
-      year: "2011",
-      heading: "Founded on Sheikh Zayed Road",
-      copy: "AMES Group opened in Dubai with a focus on Australian student and skilled migration programs.",
-    },
-    {
-      year: "2015",
-      heading: "Expanded to full-service immigration",
-      copy: "We added Canada, UK, and USA pathways while building an in-house documentation team.",
-    },
-    {
-      year: "2019",
-      heading: "Relocation & settlement desk",
-      copy: "Families and investors gained access to housing, schooling, and business setup support in destination countries.",
-    },
-    {
-      year: "2023",
-      heading: "Regional leadership in UAE Golden Visa",
-      copy: "Our consultants helped corporate clients secure long-term residency and talent mobility across the GCC.",
-    },
-  ];
-
-  const leadership = [
-    {
-      name: "Shazia Malik",
-      role: "Managing Partner & Principal Consultant",
-      summary:
-        "Licensed MARA adviser with 12+ years guiding GCC professionals through skilled migration, employer sponsorship, and PR pathways.",
-    },
-    {
-      name: "Omar Al Saeed",
-      role: "Head of Corporate & Golden Visa Services",
-      summary:
-        "Oversees investor, entrepreneur, and VIP applications while coordinating our UAE corporate sponsorship desk.",
-    },
-    {
-      name: "Dr. Nina Patel",
-      role: "Director of Education & Settlement",
-      summary:
-        "Former university admissions lead who supports student visa strategy, schooling, and settlement planning for families.",
-    },
-  ];
-
-  const accreditations = [
-    "Registered MARA Agents",
-    "ICCRC Regulated Consultants",
-    "OISC Accredited Advisers",
-    "Certified Education Agents",
-  ];
 
   return (
     <div className="space-y-20 pb-20">
@@ -90,25 +95,21 @@ const AboutUs = ({ setPlayState }) => {
               About AMES Group Dubai
             </p>
             <h1 className="mt-3 text-3xl font-bold text-brand-primary sm:text-4xl">
-              Immigration specialists rooted in the UAE
+              Extending Australia’s trusted expertise to the UAE
             </h1>
           </div>
           <div className="mt-6 space-y-5 text-left text-base leading-relaxed text-gray-600">
             <p>
-              AMES Group is a Dubai-born consultancy dedicated to helping
-              professionals, families, and investors build futures in Australia,
-              Canada, the United Kingdom, the United States, and the UAE.
+              Founded in 2007, AMES Group has become a leading provider of
+              education and immigration services. Our Dubai branch mirrors the
+              Australian headquarters—delivering personalised counselling,
+              accurate visa preparation, and relocation assistance to clients
+              throughout the Middle East.
             </p>
             <p>
-              Our consultants operate under international licensing bodies and
-              combine legal diligence with local insight. We manage every step—
-              from assessing eligibility to preparing for interviews and settling
-              in your new country.
-            </p>
-            <p>
-              The result is a transparent partnership where you always know the
-              documents submitted, the status of your file, and the milestones
-              ahead.
+              Whether you are pursuing studies, skilled migration, family
+              sponsorship, or long-term residency, we provide end-to-end support
+              that keeps you confident and informed at every step.
             </p>
           </div>
         </div>
@@ -137,7 +138,7 @@ const AboutUs = ({ setPlayState }) => {
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-white p-8 shadow-card sm:p-12">
           <h2 className="text-center text-2xl font-bold text-brand-primary sm:text-3xl">
-            What guides our work
+            Why clients choose AMES Group
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {values.map((value) => (
@@ -159,29 +160,75 @@ const AboutUs = ({ setPlayState }) => {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl bg-brand-primary/5 p-8 shadow-inner sm:p-10">
+          <h3 className="text-center text-xl font-semibold text-brand-primary sm:text-2xl">
+            Speak your language, feel at home
+          </h3>
+          <p className="mx-auto mt-3 max-w-3xl text-center text-sm text-gray-600 sm:text-base">
+            Discussing visas is easier when you can communicate comfortably. Our
+            multilingual advisers bridge the language gap so you can focus on
+            your plans, not translation.
+          </p>
+          <div className="mt-8 grid gap-3 text-center text-sm font-medium text-brand-primary sm:grid-cols-3 md:text-base">
+            {languages.map((language) => (
+              <span
+                key={language}
+                className="rounded-full bg-white px-4 py-2 shadow-sm"
+              >
+                {language}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl bg-white p-8 shadow-card sm:p-12">
+          <h2 className="text-center text-2xl font-bold text-brand-primary sm:text-3xl">
+            Business overview
+          </h2>
+          <ul className="mx-auto mt-6 max-w-4xl list-disc space-y-3 text-sm text-gray-600 sm:text-base md:pl-8">
+            {businessHighlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-[1.2fr_1fr] md:items-start">
-          <div>
+          <div className="rounded-3xl bg-white p-8 shadow-card sm:p-12">
             <h2 className="text-2xl font-bold text-brand-primary sm:text-3xl">
-              Our journey so far
+              Leadership
             </h2>
-            <p className="mt-4 text-base text-gray-600">
-              From a boutique advisory to a multi-country immigration firm, our
-              growth has been shaped by client referrals, licensed expertise, and
-              a relentless focus on outcomes.
+            <p className="mt-3 text-sm text-gray-600 sm:text-base">
+              Guided by founder Ossama Abdellatif, AMES Group continues to expand
+              globally while upholding the service standards that began in
+              Australia.
             </p>
-            <div className="mt-8 space-y-6">
-              {timeline.map((item) => (
+            <div className="mt-8 grid gap-6 md:grid-cols-1">
+              {leadership.map((person) => (
                 <div
-                  key={item.year}
-                  className="relative rounded-2xl border border-gray-100 bg-white/80 p-6 shadow-sm"
+                  key={person.name}
+                  className="flex h-full flex-col rounded-2xl border border-gray-100 bg-brand-primary/5 p-6 shadow-sm"
                 >
-                  <span className="inline-flex items-center rounded-full bg-brand-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-accent">
-                    {item.year}
-                  </span>
-                  <h3 className="mt-4 text-lg font-semibold text-brand-primary">
-                    {item.heading}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-600">{item.copy}</p>
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-primary text-white text-lg font-semibold">
+                      {person.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </div>
+                    <div>
+                      <h3 className="text-base font-semibold text-brand-primary">
+                        {person.name}
+                      </h3>
+                      <p className="text-xs uppercase tracking-wide text-brand-accent">
+                        {person.role}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-sm text-gray-600">{person.summary}</p>
                 </div>
               ))}
             </div>
@@ -192,8 +239,9 @@ const AboutUs = ({ setPlayState }) => {
               Accreditations & memberships
             </h3>
             <p className="mt-3 text-sm text-gray-600">
-              Compliance is at the heart of each file we submit. Our consultants
-              maintain active registration with these governing bodies.
+              Compliance remains central to our work. Each case is managed by
+              consultants who hold active registrations with leading global
+              bodies.
             </p>
             <ul className="mt-6 space-y-3 text-sm font-medium text-brand-primary">
               {accreditations.map((item) => (
@@ -211,53 +259,15 @@ const AboutUs = ({ setPlayState }) => {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-white p-8 shadow-card sm:p-12">
-          <h2 className="text-center text-2xl font-bold text-brand-primary sm:text-3xl">
-            Leadership team
-          </h2>
-          <p className="mx-auto mt-3 max-w-3xl text-center text-sm text-gray-600">
-            A multidisciplinary group of immigration lawyers, former admissions
-            officers, and relocation specialists who have lived abroad and guided
-            thousands of applications.
-          </p>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {leadership.map((person) => (
-              <div
-                key={person.name}
-                className="flex h-full flex-col rounded-2xl border border-gray-100 bg-brand-primary/5 p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-brand-accent/40 hover:shadow-lg"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-primary text-white text-lg font-semibold">
-                    {person.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold text-brand-primary">
-                      {person.name}
-                    </h3>
-                    <p className="text-xs uppercase tracking-wide text-brand-accent">
-                      {person.role}
-                    </p>
-                  </div>
-                </div>
-                <p className="mt-4 text-sm text-gray-600">{person.summary}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 rounded-3xl bg-brand-primary p-8 text-white shadow-2xl sm:p-12 md:grid-cols-[2fr_1fr] md:items-center">
           <div>
             <h2 className="text-2xl font-bold sm:text-3xl">
-              Ready to explore your pathway abroad?
+              Cross the bridge to your dreams
             </h2>
             <p className="mt-3 text-sm text-white/80">
-              Share your goals and we will map out a tailored immigration plan,
-              including timelines, costs, and documents, within one business day.
+              Contact us for a free consultation. We’ll review your profile,
+              discuss destinations, and map the steps to study, work, or settle
+              abroad with confidence.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a
@@ -283,7 +293,7 @@ const AboutUs = ({ setPlayState }) => {
             <ul className="mt-4 space-y-2">
               {[
                 "Eligibility review by licensed consultants",
-                "Personalized visa roadmap and document checklist",
+                "Personalised visa roadmap and document checklist",
                 "Guidance on proof of funds and compliance",
                 "Timeline and cost estimate tailored to your case",
               ].map((item) => (

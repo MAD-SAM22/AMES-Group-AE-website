@@ -1,40 +1,40 @@
 const WhyAmes = () => {
   const highlights = [
     {
-      title: "Local advisers who reply quickly",
+      title: "One-stop visa experts",
       description:
-        "You work with a named consultant in our Dubai office—no call centres or ticket systems. WhatsApp updates are standard, not extra.",
-      icon: "fa-solid fa-headset",
+        "Replicating our Australian HQ, the Dubai office delivers end-to-end support for student, skilled, family, and investor visas.",
+      icon: "fa-solid fa-globe",
     },
     {
-      title: "Document prep that holds up",
+      title: "Global partner network",
       description:
-        "We align CVs, bank letters, and employment histories with embassy checklists so you are not asked for the same document twice.",
-      icon: "fa-solid fa-file-pen",
+        "Access offers from universities, colleges, and employers across 15+ countries through longstanding AMES partnerships.",
+      icon: "fa-solid fa-school",
     },
     {
-      title: "Clear numbers before you commit",
+      title: "Local consultants in Dubai",
       description:
-        "Proof-of-funds, tuition, business investment—we walk through the maths together so you know what is realistic for your family.",
-      icon: "fa-solid fa-scale-balanced",
+        "Meet in person or online with multilingual advisers who understand GCC requirements and keep you updated in real time.",
+      icon: "fa-solid fa-handshake",
     },
     {
-      title: "Weekly status briefings",
+      title: "Licensed & compliant",
       description:
-        "Quotas shift and biometrics slots close. We let you know as it happens and adjust the plan instead of waiting for surprises.",
-      icon: "fa-solid fa-calendar-check",
+        "Our counsellors follow the same MARA, ICCRC, and OISC standards as the Australian team to ensure every submission is accurate.",
+      icon: "fa-solid fa-shield-check",
     },
     {
-      title: "Relocation aftercare",
+      title: "Practical relocation insights",
       description:
-        "Housing introductions, schooling, bank accounts—our network stays with you once the visa is stamped.",
-      icon: "fa-solid fa-people-roof",
+        "From accommodation to cultural orientation, we prepare you to thrive abroad, not just obtain the visa stamp.",
+      icon: "fa-solid fa-route",
     },
     {
-      title: "Transparent fees and paperwork",
+      title: "Transparent planning",
       description:
-        "Milestone-based invoices and shared document trackers mean you always see what has been sent and paid.",
-      icon: "fa-solid fa-receipt",
+        "Straightforward budgets, timelines, and document trackers keep you in control at every stage of the journey.",
+      icon: "fa-solid fa-clipboard-check",
     },
   ];
 
@@ -45,12 +45,11 @@ const WhyAmes = () => {
           Why AMES Group
         </span>
         <h2 className="mt-6 text-3xl font-bold text-brand-accent sm:text-4xl">
-          Practical guidance from people who handle visas every day
+          Global expertise with a Dubai-based team
         </h2>
         <p className="mt-4 text-base text-gray-600 sm:text-lg">
-          We are a Dubai-based advisory that knows the reality of embassy queues,
-          sponsorship rules, and relocation logistics. Here is how that
-          experience shows up when you work with us.
+          As the GCC extension of AMES Group Australia, we combine international
+          reach with local knowledge to manage every step of your migration plan.
         </p>
       </div>
 

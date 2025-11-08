@@ -1,19 +1,19 @@
 const FirstMonthSteps = () => {
   const steps = [
     {
-      title: "Intro call & document checklist",
+      title: "Discover your best-fit pathway",
       description:
-        "We review your goals, audit existing paperwork, and create a realistic route with tasks for both you and our team.",
+        "We explore destinations, visa categories, budgets, and timelines so you can select the route that matches your goals.",
     },
     {
-      title: "Coaching & paperwork preparation",
+      title: "Plan with personalised guidance",
       description:
-        "We coordinate translations, notarizations, IELTS prep, or business planning so your file meets embassy standards.",
+        "Together we build your course or migration plan, gather documents, and prepare for financial, English, and compliance requirements.",
     },
     {
-      title: "Application lodgment & follow up",
+      title: "Take action with confidence",
       description:
-        "Your consultant files the application, manages biometrics, and sends weekly updates until a decision is issued.",
+        "Our team submits, tracks, and follows up on your visa while you prepare for departure with cultural and settlement support.",
     },
   ];
 
@@ -23,11 +23,12 @@ const FirstMonthSteps = () => {
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div className="text-white">
             <h2 className="text-3xl font-bold sm:text-4xl">
-              What the first month with AMES looks like
+              Three simple phases to move you abroad
             </h2>
             <p className="mt-4 text-base text-white/80">
-              We start by understanding the life you want to build abroad, then
-              break the work into clear actions we take together.
+              The Dubai team mirrors AMES Group Australia’s proven playbook:
+              discover where you fit, plan the detail, then act with a fully
+              prepared application.
             </p>
             <a
               href="/assessment"

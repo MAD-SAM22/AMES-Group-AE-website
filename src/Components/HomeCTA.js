@@ -3,21 +3,21 @@ const HomeCTA = () => (
     <div className="overflow-hidden rounded-3xl border border-brand-primary/20 bg-white p-8 shadow-card sm:p-12">
       <div className="grid gap-8 md:grid-cols-[1.3fr_1fr] md:items-center">
         <div>
-          <h2 className="text-2xl font-bold text-brand-primary sm:text-3xl">
-            Let’s shape your international move together
+        <h2 className="text-2xl font-bold text-brand-primary sm:text-3xl">
+          Book an appointment with our Dubai consultants
           </h2>
           <p className="mt-4 text-sm text-gray-600 sm:text-base">
-            Take three minutes to tell us about your goals and we’ll share a
-            tailored immigration roadmap with timelines, budget guidance, and the
-            documents to prioritise.
+            Share your study, work, or residency ambitions and we’ll mirror the
+            Australian branch’s proven methodology to map the best visa plan for
+            you.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="/assessment"
               className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-6 py-3 text-xs font-semibold uppercase tracking-wide text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-primaryDark"
             >
-              Start Free Assessment
-              <i className="fa-solid fa-arrow-right" />
+              Book Appointment
+              <i className="fa-solid fa-calendar-check" />
             </a>
             <a
               href="/contact"
@@ -30,14 +30,14 @@ const HomeCTA = () => (
         </div>
         <div className="rounded-2xl bg-brand-primary/5 p-6 text-sm text-gray-700 shadow-inner">
           <h3 className="text-base font-semibold text-brand-primary">
-            What you’ll receive
+            During your consultation
           </h3>
           <ul className="mt-4 space-y-2">
             {[
-              "Eligibility review by licensed consultants",
-              "Visa options ranked for your profile",
-              "Document checklist and templates",
-              "Budget and timeline guidance",
+              "Eligibility assessment for study, work, and residency visas",
+              "Recommendations rooted in AMES Group’s global partnerships",
+              "Step-by-step document and budgeting checklist",
+              "Orientation tips for thriving in your new destination",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2">
                 <i className="fa-solid fa-circle-check mt-1 text-brand-accent" />

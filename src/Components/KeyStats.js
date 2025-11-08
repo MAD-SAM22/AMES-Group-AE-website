@@ -1,9 +1,9 @@
 const KeyStats = () => {
   const stats = [
-    { value: "12+", label: "years operating from Dubai" },
-    { value: "750+", label: "successfully prepared visa files" },
-    { value: "4.9 / 5", label: "average client feedback score" },
-    { value: "7", label: "destinations we work on every week" },
+    { value: "15+", label: "study & migration destinations supported" },
+    { value: "300+", label: "partner universities and employers" },
+    { value: "10K+", label: "students, professionals & families assisted" },
+    { value: "12", label: "languages spoken across our advisor network" },
   ];
 
   return (

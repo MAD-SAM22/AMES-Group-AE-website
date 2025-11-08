@@ -1,21 +1,27 @@
 const ServiceOverview = () => {
   const focusAreas = [
     {
-      title: "Professionals & Skilled Workers",
+      title: "Student Visas",
       description:
-        "Strategic guidance on skilled migration, employer sponsorship, and points-boosting pathways tailored to your career trajectory.",
-      icon: "fa-solid fa-briefcase",
-    },
-    {
-      title: "Students & Graduates",
-      description:
-        "University placement, visa preparation, and post-study work planning designed for ambitious students leaving the UAE.",
+        "Admissions, visa paperwork, and arrival support for studying across Australia, Canada, the UK, USA, Europe, and more.",
       icon: "fa-solid fa-graduation-cap",
     },
     {
-      title: "Investors & Entrepreneurs",
+      title: "Work & Skilled Migration",
       description:
-        "Business migration, startup visas, and Golden Visa programs supported by dedicated legal and corporate services teams.",
+        "Occupation assessments, sponsorship, and permanent residency pathways tailored to your professional goals.",
+      icon: "fa-solid fa-briefcase",
+    },
+    {
+      title: "Family & Partner Visas",
+      description:
+        "Reunite with loved ones through partner, parent, child, and dependent visas with evidence-led coaching.",
+      icon: "fa-solid fa-people-roof",
+    },
+    {
+      title: "Investor & UAE Golden Visas",
+      description:
+        "Investment strategy, company setup, and long-term residency solutions including the UAE Golden Visa.",
       icon: "fa-solid fa-hand-holding-dollar",
     },
   ];
@@ -28,17 +34,16 @@ const ServiceOverview = () => {
             Comprehensive services
           </span>
           <h2 className="mt-4 text-3xl font-bold text-brand-primary sm:text-4xl">
-            Tailored immigration support for every pathway
+            Immigration services built on the AMES Group legacy
           </h2>
           <p className="mx-auto mt-3 max-w-3xl text-sm text-gray-600 sm:text-base">
-            We combine licensed immigration expertise with Dubai-based service
-            teams to deliver transparent advice, meticulously prepared
-            applications, and relocation support that doesn’t stop at visa
-            approval.
+            From our Dubai branch we deliver the Australian team’s proven
+            methodology—clear advice, accurate documentation, and genuine care
+            from consultation to arrival.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {focusAreas.map((area) => (
             <div
               key={area.title}

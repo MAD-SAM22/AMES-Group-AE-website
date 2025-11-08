@@ -1,12 +1,13 @@
-import Destination from "../Components/Destination";
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import img1 from "../assets/img1.jpg";
+import Destination from "../Components/Destination";
 import Trip from "../Components/Trip";
 import Footer from "../Components/Footer";
 import KeyStats from "../Components/KeyStats";
 import WhyAmes from "../Components/WhyAmes";
 import FirstMonthSteps from "../Components/FirstMonthSteps";
+import HomeGallery from "../Components/HomeGallery";
 import ClientTestimonials from "../Components/ClientTestimonials";
 import HomeCTA from "../Components/HomeCTA";
 
@@ -26,9 +27,10 @@ function Home() {
       <KeyStats />
       <WhyAmes />
       <FirstMonthSteps />
+      <Destination />
+      <HomeGallery />
       <ClientTestimonials />
       <HomeCTA />
-      <Destination />
       <Trip />
       <Footer />
     </>

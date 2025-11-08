@@ -1,26 +1,26 @@
 const phases = [
   {
-    title: "1 · Strategy & Readiness",
+    title: "1 · Discover",
     points: [
-      "Eligibility review by licensed consultants",
-      "Document checklist with templates and examples",
-      "Financial planning and proof of funds guidance",
+      "Understand destinations, visa subclasses, and eligibility",
+      "Compare study, work, and residency options side by side",
+      "Receive an outline of costs, documents, and timelines",
     ],
   },
   {
-    title: "2 · Application Build",
+    title: "2 · Plan",
     points: [
-      "Skills assessments, sponsorship, and course admissions",
-      "Submission-ready documentation compiled by our Dubai team",
-      "Mock interviews and embassy appointment preparation",
+      "Prepare applications, financials, and supporting evidence",
+      "Complete skills assessments, admissions, and sponsorship tasks",
+      "Practise interviews and biometrics appointments with our team",
     ],
   },
   {
-    title: "3 · Approval & Settlement",
+    title: "3 · Act",
     points: [
-      "Application lodgment with ongoing follow-ups",
-      "Relocation support—housing, schooling, bank introductions",
-      "Post-arrival compliance reminders and visa renewals",
+      "Lodge visas, respond to immigration requests, and track updates",
+      "Arrange travel, accommodation, insurance, and settlement essentials",
+      "Stay connected for renewals, PR upgrades, or family sponsorships",
     ],
   },
 ];
@@ -30,12 +30,12 @@ const ServiceJourney = () => (
     <div className="grid gap-10 rounded-3xl bg-brand-primary p-8 text-white shadow-2xl sm:p-12 md:grid-cols-[1.1fr_1fr] md:items-center">
       <div>
         <h2 className="text-3xl font-bold sm:text-4xl">
-          A proven journey from consultation to arrival
+          Mirror the Australian branch’s proven journey
         </h2>
         <p className="mt-3 text-sm text-white/80 sm:text-base">
-          Each service engagement is mapped against measurable milestones.
-          You’ll always know what’s in progress, what’s approved, and which
-          tasks still need attention.
+          The Dubai office follows the same three-step approach that has helped
+          thousands succeed through AMES Group Australia—discover, plan, and act
+          with confidence.
         </p>
         <a
           href="/assessment"
