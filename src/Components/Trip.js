@@ -1,24 +1,24 @@
-import TripData from "./TripData";
-import ServicePopup from "./ServicePopup";
-import ServiceFilter from "./ServiceFilter";
-import "./TripStyle.css";
-import student from "../assets/student-visa.jpg";
+import { useMemo, useState } from "react";
+
 import Business from "../assets/Business-Visa.jpg";
 import family from "../assets/family-visa.png";
 import golden from "../assets/golden-visa.png";
 import perminant from "../assets/AU-perminant.jpg";
-import work from "../assets/work-permit-uae.jpg";
-import Trip1 from "../assets/5.jpg";
+import student from "../assets/student-visa.jpg";
 import Trip2 from "../assets/8.jpg";
 import Trip3 from "../assets/6.jpg";
-import { useState, useMemo } from "react";
+import work from "../assets/work-permit-uae.jpg";
+import ServiceFilter from "./ServiceFilter";
+import ServicePopup from "./ServicePopup";
+import TripData from "./TripData";
 
 const Trip = () => {
   const [selectedService, setSelectedService] = useState(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [filters, setFilters] = useState({});
 
-  const services = [
+  const services = useMemo(
+    () => [
     {
       image: student,
       heading: "Student Visas",
@@ -323,7 +323,9 @@ const Trip = () => {
       ],
       processingTime: "2-6 weeks for work permit processing"
     }
-  ];
+  ],
+    []
+  );
 
   // Filter services based on active filters
   const filteredServices = useMemo(() => {
@@ -382,7 +384,7 @@ const Trip = () => {
 
       return true;
     });
-  }, [filters]);
+  }, [filters, services]);
 
   const handleServiceClick = (service) => {
     setSelectedService(service);
@@ -400,36 +402,45 @@ const Trip = () => {
 
   return (
     <>
-      <div className="trip">
-        <h1>Our Immigration Services</h1>
-        <p>Comprehensive immigration solutions tailored to your needs</p>
-        
-        <ServiceFilter 
+      <section className="mx-auto mt-20 max-w-6xl px-4 text-center sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold text-brand-accent sm:text-4xl">
+          Our Immigration Services
+        </h1>
+        <p className="mt-3 text-base text-gray-600 sm:text-lg">
+          Comprehensive immigration solutions tailored to your needs
+        </p>
+
+        <ServiceFilter
           onFilterChange={handleFilterChange}
           totalServices={services.length}
           filteredCount={filteredServices.length}
         />
-        
-        <div className="trip-card">
-          {filteredServices.map((service, index) => (
-            <div key={index} onClick={() => handleServiceClick(service)}>
-              <TripData
-                image={service.image}
-                heading={service.heading}
-                text={service.text}
-              />
-            </div>
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {filteredServices.map((service) => (
+            <TripData
+              key={service.heading}
+              image={service.image}
+              heading={service.heading}
+              text={service.text}
+              onClick={() => handleServiceClick(service)}
+            />
           ))}
         </div>
-        
+
         {filteredServices.length === 0 && (
-          <div className="no-results">
-            <h3>No services match your current filters</h3>
-            <p>Try adjusting your filter criteria or clearing all filters to see all available services.</p>
+          <div className="mt-12 rounded-xl border border-dashed border-gray-300 bg-gray-50 p-10 text-center">
+            <h3 className="text-xl font-semibold text-gray-700">
+              No services match your current filters
+            </h3>
+            <p className="mt-3 text-gray-500">
+              Try adjusting your filter criteria or clearing all filters to see
+              all available services.
+            </p>
           </div>
         )}
-      </div>
-      
+      </section>
+
       <ServicePopup
         service={selectedService}
         isOpen={isPopupOpen}

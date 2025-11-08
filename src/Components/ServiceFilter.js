@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
-import './ServiceFilter.css';
+import React, { useState } from "react";
 
 const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
   const [filters, setFilters] = useState({
-    destination: '',
-    visaType: '',
-    timeline: '',
-    budget: '',
-    education: '',
-    experience: '',
-    englishLevel: '',
-    age: '',
-    family: '',
-    search: ''
+    destination: "",
+    visaType: "",
+    timeline: "",
+    budget: "",
+    education: "",
+    experience: "",
+    englishLevel: "",
+    age: "",
+    family: "",
+    search: "",
   });
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -25,116 +24,178 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
 
   const clearFilters = () => {
     const clearedFilters = {
-      destination: '',
-      visaType: '',
-      timeline: '',
-      budget: '',
-      education: '',
-      experience: '',
-      englishLevel: '',
-      age: '',
-      family: '',
-      search: ''
+      destination: "",
+      visaType: "",
+      timeline: "",
+      budget: "",
+      education: "",
+      experience: "",
+      englishLevel: "",
+      age: "",
+      family: "",
+      search: "",
     };
     setFilters(clearedFilters);
     onFilterChange(clearedFilters);
   };
 
-  const hasActiveFilters = Object.values(filters).some(value => value !== '');
+  const hasActiveFilters = Object.values(filters).some((value) => value !== "");
 
   const toggleExpanded = () => {
-    setIsExpanded(!isExpanded);
+    setIsExpanded((prev) => !prev);
   };
 
+  const getQuickFilterClasses = (isActive) =>
+    [
+      "rounded-full border-2 px-4 py-2 text-sm font-medium transition duration-200",
+      isActive
+        ? "border-brand-primary bg-brand-primary text-white shadow-sm"
+        : "border-gray-200 bg-gray-100 text-gray-600 hover:border-brand-primary hover:bg-white hover:text-brand-primary",
+    ].join(" ");
+
+  const selectClasses =
+    "rounded-lg border-2 border-gray-200 bg-white px-3 py-3 text-sm text-gray-700 transition focus:border-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary/20";
+
   return (
-    <div className="service-filter">
-      {/* Main Search Bar */}
-      <div className="search-bar-container">
-        <div className="search-bar">
-          <div className="search-input-container">
-            <i className="fas fa-search search-icon"></i>
+    <div className="mt-12 text-left">
+      <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card transition duration-200 hover:border-brand-primary/40 hover:shadow-lg">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center">
+          <div className="relative flex-1">
+            <i className="fas fa-search pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-lg text-brand-primary" />
             <input
               type="text"
               placeholder="Search immigration services..."
               value={filters.search}
-              onChange={(e) => handleFilterChange('search', e.target.value)}
-              className="main-search-input"
+              onChange={(e) => handleFilterChange("search", e.target.value)}
+              className="w-full rounded-xl border-2 border-gray-200 bg-gray-50 py-3 pl-12 pr-32 text-base text-gray-700 transition duration-200 focus:border-brand-primary focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-primary/20"
             />
             {hasActiveFilters && (
-              <span className="active-filters-count">
-                {Object.values(filters).filter(value => value !== '').length} filters
+              <span className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-brand-primary px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                {
+                  Object.values(filters).filter(
+                    (value) => value !== ""
+                  ).length
+                }{" "}
+                filters
               </span>
             )}
           </div>
-          <button 
-            className={`expand-btn ${isExpanded ? 'expanded' : ''}`}
+
+          <button
+            type="button"
+            className={`flex h-12 w-12 items-center justify-center rounded-xl text-lg text-white transition duration-200 ${
+              isExpanded
+                ? "bg-red-500 hover:bg-red-600"
+                : "bg-brand-primary hover:bg-brand-primaryDark"
+            }`}
             onClick={toggleExpanded}
-            title={isExpanded ? 'Minimize filters' : 'Show all filters'}
+            title={isExpanded ? "Minimize filters" : "Show all filters"}
           >
-            <i className={`fas ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+            <i
+              className={`fas ${
+                isExpanded ? "fa-chevron-up" : "fa-chevron-down"
+              }`}
+            />
           </button>
         </div>
 
-        {/* Quick Filter Pills */}
-        <div className="quick-filters">
-          <button 
-            className={`quick-filter ${filters.destination === 'Australia' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('destination', filters.destination === 'Australia' ? '' : 'Australia')}
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            className={getQuickFilterClasses(filters.destination === "Australia")}
+            onClick={() =>
+              handleFilterChange(
+                "destination",
+                filters.destination === "Australia" ? "" : "Australia"
+              )
+            }
           >
             Australia
           </button>
-          <button 
-            className={`quick-filter ${filters.destination === 'UAE' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('destination', filters.destination === 'UAE' ? '' : 'UAE')}
+          <button
+            type="button"
+            className={getQuickFilterClasses(filters.destination === "UAE")}
+            onClick={() =>
+              handleFilterChange(
+                "destination",
+                filters.destination === "UAE" ? "" : "UAE"
+              )
+            }
           >
             UAE
           </button>
-          <button 
-            className={`quick-filter ${filters.visaType === 'Student Visa' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('visaType', filters.visaType === 'Student Visa' ? '' : 'Student Visa')}
+          <button
+            type="button"
+            className={getQuickFilterClasses(filters.visaType === "Student Visa")}
+            onClick={() =>
+              handleFilterChange(
+                "visaType",
+                filters.visaType === "Student Visa" ? "" : "Student Visa"
+              )
+            }
           >
             Student Visa
           </button>
-          <button 
-            className={`quick-filter ${filters.visaType === 'Work Visa' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('visaType', filters.visaType === 'Work Visa' ? '' : 'Work Visa')}
+          <button
+            type="button"
+            className={getQuickFilterClasses(filters.visaType === "Work Visa")}
+            onClick={() =>
+              handleFilterChange(
+                "visaType",
+                filters.visaType === "Work Visa" ? "" : "Work Visa"
+              )
+            }
           >
             Work Visa
           </button>
-          <button 
-            className={`quick-filter ${filters.timeline === 'fast' ? 'active' : ''}`}
-            onClick={() => handleFilterChange('timeline', filters.timeline === 'fast' ? '' : 'fast')}
+          <button
+            type="button"
+            className={getQuickFilterClasses(filters.timeline === "fast")}
+            onClick={() =>
+              handleFilterChange(
+                "timeline",
+                filters.timeline === "fast" ? "" : "fast"
+              )
+            }
           >
             Fast Processing
           </button>
+
           {hasActiveFilters && (
-            <button className="clear-all-btn" onClick={clearFilters}>
-              <i className="fas fa-times"></i> Clear All
+            <button
+              type="button"
+              className="ml-auto inline-flex items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition duration-200 hover:bg-red-600"
+              onClick={clearFilters}
+            >
+              <i className="fas fa-times" />
+              Clear All
             </button>
           )}
         </div>
       </div>
 
-      {/* Expanded Filter Panel */}
       {isExpanded && (
-        <div className="expanded-filters">
-          <div className="filter-header">
-            <h3>Advanced Filters</h3>
-            <div className="filter-stats">
-              <span className="filter-count">
-                Showing {filteredCount} of {totalServices} services
-              </span>
-            </div>
+        <div className="mt-6 rounded-2xl border border-gray-100 bg-gray-50 p-6 shadow-inner">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <h3 className="text-xl font-semibold text-brand-accent">
+              Advanced Filters
+            </h3>
+            <span className="text-sm font-medium text-gray-600">
+              Showing {filteredCount} of {totalServices} services
+            </span>
           </div>
 
-          <div className="filter-grid">
-            {/* Destination */}
-            <div className="filter-group">
-              <label>Destination Country</label>
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Destination Country
+              </label>
               <select
                 value={filters.destination}
-                onChange={(e) => handleFilterChange('destination', e.target.value)}
-                className="filter-select"
+                onChange={(e) =>
+                  handleFilterChange("destination", e.target.value)
+                }
+                className={selectClasses}
               >
                 <option value="">All Destinations</option>
                 <option value="Australia">Australia</option>
@@ -148,13 +209,16 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
               </select>
             </div>
 
-            {/* Visa Type */}
-            <div className="filter-group">
-              <label>Visa Type</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Visa Type
+              </label>
               <select
                 value={filters.visaType}
-                onChange={(e) => handleFilterChange('visaType', e.target.value)}
-                className="filter-select"
+                onChange={(e) =>
+                  handleFilterChange("visaType", e.target.value)
+                }
+                className={selectClasses}
               >
                 <option value="">All Visa Types</option>
                 <option value="Student Visa">Student Visa</option>
@@ -168,13 +232,16 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
               </select>
             </div>
 
-            {/* Timeline */}
-            <div className="filter-group">
-              <label>Processing Timeline</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Processing Timeline
+              </label>
               <select
                 value={filters.timeline}
-                onChange={(e) => handleFilterChange('timeline', e.target.value)}
-                className="filter-select"
+                onChange={(e) =>
+                  handleFilterChange("timeline", e.target.value)
+                }
+                className={selectClasses}
               >
                 <option value="">Any Timeline</option>
                 <option value="fast">Fast (1-3 months)</option>
@@ -183,13 +250,16 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
               </select>
             </div>
 
-            {/* Budget */}
-            <div className="filter-group">
-              <label>Budget Range</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Budget Range
+              </label>
               <select
                 value={filters.budget}
-                onChange={(e) => handleFilterChange('budget', e.target.value)}
-                className="filter-select"
+                onChange={(e) =>
+                  handleFilterChange("budget", e.target.value)
+                }
+                className={selectClasses}
               >
                 <option value="">Any Budget</option>
                 <option value="low">Low ($0 - $5,000)</option>
@@ -198,30 +268,36 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
               </select>
             </div>
 
-            {/* Education Level */}
-            <div className="filter-group">
-              <label>Education Level</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Education Level
+              </label>
               <select
                 value={filters.education}
-                onChange={(e) => handleFilterChange('education', e.target.value)}
-                className="filter-select"
+                onChange={(e) =>
+                  handleFilterChange("education", e.target.value)
+                }
+                className={selectClasses}
               >
                 <option value="">Any Education</option>
                 <option value="high-school">High School</option>
                 <option value="diploma">Diploma</option>
-                <option value="bachelor">Bachelor's Degree</option>
-                <option value="master">Master's Degree</option>
+                <option value="bachelor">Bachelor&apos;s Degree</option>
+                <option value="master">Master&apos;s Degree</option>
                 <option value="phd">PhD</option>
               </select>
             </div>
 
-            {/* Work Experience */}
-            <div className="filter-group">
-              <label>Work Experience</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Work Experience
+              </label>
               <select
                 value={filters.experience}
-                onChange={(e) => handleFilterChange('experience', e.target.value)}
-                className="filter-select"
+                onChange={(e) =>
+                  handleFilterChange("experience", e.target.value)
+                }
+                className={selectClasses}
               >
                 <option value="">Any Experience</option>
                 <option value="none">No Experience</option>
@@ -231,13 +307,16 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
               </select>
             </div>
 
-            {/* English Level */}
-            <div className="filter-group">
-              <label>English Proficiency</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                English Proficiency
+              </label>
               <select
                 value={filters.englishLevel}
-                onChange={(e) => handleFilterChange('englishLevel', e.target.value)}
-                className="filter-select"
+                onChange={(e) =>
+                  handleFilterChange("englishLevel", e.target.value)
+                }
+                className={selectClasses}
               >
                 <option value="">Any Level</option>
                 <option value="beginner">Beginner</option>
@@ -249,13 +328,14 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
               </select>
             </div>
 
-            {/* Age */}
-            <div className="filter-group">
-              <label>Age Range</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Age Range
+              </label>
               <select
                 value={filters.age}
-                onChange={(e) => handleFilterChange('age', e.target.value)}
-                className="filter-select"
+                onChange={(e) => handleFilterChange("age", e.target.value)}
+                className={selectClasses}
               >
                 <option value="">Any Age</option>
                 <option value="18-25">18-25</option>
@@ -265,13 +345,14 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
               </select>
             </div>
 
-            {/* Family Status */}
-            <div className="filter-group">
-              <label>Family Status</label>
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-semibold uppercase tracking-wide text-gray-600">
+                Family Status
+              </label>
               <select
                 value={filters.family}
-                onChange={(e) => handleFilterChange('family', e.target.value)}
-                className="filter-select"
+                onChange={(e) => handleFilterChange("family", e.target.value)}
+                className={selectClasses}
               >
                 <option value="">Any Status</option>
                 <option value="single">Single</option>
@@ -281,19 +362,24 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
             </div>
           </div>
 
-          {/* Active Filters Display */}
           {hasActiveFilters && (
-            <div className="active-filters">
-              <h4>Active Filters:</h4>
-              <div className="active-filter-tags">
+            <div className="mt-6 rounded-xl border-l-4 border-brand-primary bg-white p-5 shadow-sm">
+              <h4 className="text-sm font-semibold uppercase tracking-wide text-brand-primary">
+                Active Filters
+              </h4>
+              <div className="mt-4 flex flex-wrap gap-2">
                 {Object.entries(filters).map(([key, value]) => {
-                  if (value && value !== '') {
+                  if (value && value !== "") {
                     return (
-                      <span key={key} className="filter-tag">
+                      <span
+                        key={key}
+                        className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white"
+                      >
                         {key.charAt(0).toUpperCase() + key.slice(1)}: {value}
                         <button
-                          onClick={() => handleFilterChange(key, '')}
-                          className="remove-filter"
+                          type="button"
+                          onClick={() => handleFilterChange(key, "")}
+                          className="rounded-full bg-white/20 px-2 text-sm font-bold text-white transition hover:bg-white/40"
                         >
                           ×
                         </button>
@@ -312,3 +398,4 @@ const ServiceFilter = ({ onFilterChange, totalServices, filteredCount }) => {
 };
 
 export default ServiceFilter;
+

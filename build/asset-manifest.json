@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.d707ba0d.css",
-    "main.js": "/static/js/main.a14f8ede.js",
-    "static/media/3.jpg": "/static/media/3.84d5235cc693e15661d6.jpg",
-    "static/media/2.jpg": "/static/media/2.bbb41348bb839b9124d8.jpg",
-    "static/media/1.jpg": "/static/media/1.509d4d795248ac9962f3.jpg",
+    "main.css": "/static/css/main.7f25f620.css",
+    "main.js": "/static/js/main.3e94e1f2.js",
+    "static/media/3.jpg": "/static/media/3.8c04735362367b917e7c.jpg",
+    "static/media/1.jpg": "/static/media/1.6bad4c033932c1946c20.jpg",
+    "static/media/family-visa.png": "/static/media/family-visa.2f9a75787281d2295229.png",
+    "static/media/about.png": "/static/media/about.ae79f7c4ba002987bed7.png",
+    "static/media/2.jpg": "/static/media/2.7e35f85b21c31f49b87d.jpg",
+    "static/media/golden-visa.png": "/static/media/golden-visa.48a282844ae8d2b7dfc7.png",
+    "static/media/work-permit-uae.jpg": "/static/media/work-permit-uae.0cfcc763c4b5cac42531.jpg",
     "static/media/img1.jpg": "/static/media/img1.257c5311e1cae5638aad.jpg",
-    "static/media/8.jpg": "/static/media/8.9d1ddd2ceb0e8def6f48.jpg",
-    "static/media/5.jpg": "/static/media/5.46b372902997b3fbd648.jpg",
-    "static/media/6.jpg": "/static/media/6.c405c8228d51cdef5d0f.jpg",
-    "static/media/4.jpg": "/static/media/4.0c7885e97d08f0a61db1.jpg",
+    "static/media/8.jpg": "/static/media/8.aad285babc9888c0221f.jpg",
+    "static/media/4.jpg": "/static/media/4.c077c514b1a8a48b2d0c.jpg",
+    "static/media/6.jpg": "/static/media/6.b76d7e972c53f7e4b00a.jpg",
+    "static/media/student-visa.jpg": "/static/media/student-visa.d4d801606bd04d090565.jpg",
     "static/media/night.jpg": "/static/media/night.ac6d287d5d0014553b87.jpg",
+    "static/media/Business-Visa.jpg": "/static/media/Business-Visa.e868d9c4ba84d44e84d9.jpg",
+    "static/media/AU-perminant.jpg": "/static/media/AU-perminant.de2caca16f8170f1e626.jpg",
+    "static/media/Logo.png": "/static/media/Logo.0a347a3c0c96df98f9a4.png",
     "index.html": "/index.html",
-    "main.d707ba0d.css.map": "/static/css/main.d707ba0d.css.map",
-    "main.a14f8ede.js.map": "/static/js/main.a14f8ede.js.map"
+    "main.7f25f620.css.map": "/static/css/main.7f25f620.css.map",
+    "main.3e94e1f2.js.map": "/static/js/main.3e94e1f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d707ba0d.css",
-    "static/js/main.a14f8ede.js"
+    "static/css/main.7f25f620.css",
+    "static/js/main.3e94e1f2.js"
   ]
 }

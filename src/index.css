@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply font-poppins text-gray-900 bg-white antialiased;
+  }
+}
+
+

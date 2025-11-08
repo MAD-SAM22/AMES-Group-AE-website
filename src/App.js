@@ -1,4 +1,3 @@
-import "./styles.css";
 import React, { useState } from "react";
 import Home from "./routes/Home";
 import About from "./routes/About";
@@ -12,7 +11,7 @@ export default function App() {
   const [playState, setPlayState] = useState(false);
 
   return (
-    <div className="App">
+    <div className="min-h-screen bg-white text-gray-900">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
